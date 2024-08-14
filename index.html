@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Container */
+    .container {
+      width: 90%;
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Section Styling */
+    #about {
+      padding: 60px 0;
+      text-align: center;
+      background-color: #f8f9fa;
+    }
+
+    /* Title Styling */
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      color: #333;
+    }
+
+    /* Profile Image Styling */
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 5px solid #ddd;
+      margin-bottom: 30px;
+    }
+
+    /* Text Styling */
+    .about-text {
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #555;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      h2 {
+        font-size: 2rem;
+      }
+
+      .about-text {
+        font-size: 0.9rem;
+      }
+    }
+
+    /* Navigation Bar Styling */
+.navbar {
+  background-color: #343a40; /* Dark background color */
+}
+
+.navbar-nav .nav-link {
+  color: #fff; /* White text color for links */
+  margin-right: 15px;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa; /* Lighter color on hover */
+}
+
+.navbar-brand {
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+.navbar-brand:hover {
+  color: #f8f9fa;
+}
+
+/* Offset for fixed navbar */
+body {
+  padding-top: 70px; /* Adjust if your navbar height changes */
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .navbar-nav .nav-link {
+    margin-right: 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+  </style>
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Home Section (For navigation purpose only) -->
+  <section id="home" style="height: 1px; margin-top: 70px;"></section>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Lucas Data Portfolio.</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <!-- About Title -->
+      <h2>About</h2>
+
+      <!-- Profile Image -->
+      <div>
+        <img src="images/about/1.jpg" class="profile-img" alt="Profile Image">
+      </div>
+
+      <!-- About Text -->
+      <div class="about-text">
+        <p>Data Analyst with more than 10 years of experience in marketing analytics, ad sales, digital media, and
+          Ecommerce.<br><br>
+
+          Passionate about working with clients and improving their advertising strategy and campaigns, using a data
+          driven approach.<br><br>
+
+          Skilled in translating data into actionable insights, using SQL and Python for analysis, and automating
+          reports with Looker Studio and Google Colab.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <!-- Projects Title -->
+      <h2 class="text-center mb-5">Projects</h2>
+
+      <!-- Projects Cards -->
+      <div class="row">
+        <!-- Project 1 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <img src="images/projects/1.jpg" class="card-img-top" alt="Project 1 Image">
+            <div class="card-body">
+              <h5 class="card-title">Project 1</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac malesuada dui.</p>
+              <a href="#" class="btn btn-primary">Blog Post</a>
+              <a href="#" class="btn btn-secondary">Source Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <img src="images/projects/2.jpg" class="card-img-top" alt="Project 2 Image">
+            <div class="card-body">
+              <h5 class="card-title">Project 2</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac malesuada dui.</p>
+              <a href="#" class="btn btn-primary">Blog Post</a>
+              <a href="#" class="btn btn-secondary">Source Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card">
+            <img src="images/projects/3.jpg" class="card-img-top" alt="Project 3 Image">
+            <div class="card-body">
+              <h5 class="card-title">Project 3</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac malesuada dui.</p>
+              <a href="#" class="btn btn-primary">Blog Post</a>
+              <a href="#" class="btn btn-secondary">Source Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-5">
+    <div class="container">
+      <!-- Skills Title -->
+      <h2 class="text-center mb-5">Skills</h2>
+
+      <!-- Skills Cards -->
+      <div class="row">
+        <!-- Skill 1 -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card text-center">
+            <img src="images/skills/1.png" class="card-img-top mx-auto mt-4" alt="Skill 1 Icon" style="width: 60px;">
+            <div class="card-body">
+              <h5 class="card-title">Python</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac malesuada dui.</p>
+              <a href="#" class="btn btn-primary">Link to course or bootcamp</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill 2 -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card text-center">
+            <img src="images/skills/2.png" class="card-img-top mx-auto mt-4" alt="Skill 2 Icon" style="width: 60px;">
+            <div class="card-body">
+              <h5 class="card-title">Data Visualization</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac malesuada dui.</p>
+              <a href="#" class="btn btn-primary">Link to course or bootcamp</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill 3 -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card text-center">
+            <img src="images/skills/3.png" class="card-img-top mx-auto mt-4" alt="Skill 3 Icon" style="width: 60px;">
+            <div class="card-body">
+              <h5 class="card-title">SQL</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac malesuada dui.</p>
+              <a href="#" class="btn btn-primary">Link to course or bootcamp</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill 4 -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card text-center">
+            <img src="images/skills/4.png" class="card-img-top mx-auto mt-4" alt="Skill 4 Icon" style="width: 60px;">
+            <div class="card-body">
+              <h5 class="card-title">Data Storytelling</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac malesuada dui.</p>
+              <a href="#" class="btn btn-primary">Link to course or bootcamp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Me Section -->
+  <section id="contact" class="py-5" style="background-color: #333; color: #fff;">
+    <div class="container text-center">
+      <!-- Contact Me Title -->
+      <h2 class="mb-5">Contact Me</h2>
+
+      <!-- Contact Information -->
+      <div class="row justify-content-center mb-4">
+        <!-- Email -->
+        <div class="col-md-4">
+          <i class="fas fa-envelope fa-2x mb-3"></i>
+          <p>your.email@zamreissen.com</p>
+        </div>
+        <!-- Phone -->
+        <div class="col-md-4">
+          <i class="fas fa-phone fa-2x mb-3"></i>
+          <p>+44 7984 456 7890</p>
+        </div>
+      </div>
+
+      <!-- Social Media Icons -->
+      <div class="row justify-content-center">
+        <!-- LinkedIn -->
+        <div class="col-2 col-md-1 mb-3">
+          <a href="https://www.linkedin.com/in/lucaswindhager" target="_blank" class="btn btn-circle" data-toggle="tooltip" data-placement="top" title="LinkedIn">
+            <img src="icons/linkedin.png" alt="LinkedIn" style="width: 30px;">
+          </a>
+          <p class="mt-2">LinkedIn</p>
+        </div>
+        <!-- Twitter -->
+        <div class="col-2 col-md-1 mb-3">
+          <a href="#" target="_blank" class="btn btn-circle" data-toggle="tooltip" data-placement="top" title="Twitter">
+            <img src="icons/twitter.png" alt="Twitter" style="width: 30px;">
+          </a>
+          <p class="mt-2">Twitter</p>
+        </div>
+        <!-- GitHub -->
+        <div class="col-2 col-md-1 mb-3">
+          <a href="https://www.github.com/Lucas-LDN" target="_blank" class="btn btn-circle" data-toggle="tooltip" data-placement="top" title="GitHub">
+            <img src="icons/github.png" alt="GitHub" style="width: 30px;">
+          </a>
+          <p class="mt-2">GitHub</p>
+        </div>
+        <!-- Medium -->
+        <div class="col-2 col-md-1 mb-3">
+          <a href="#" target="_blank" class="btn btn-circle" data-toggle="tooltip" data-placement="top" title="Medium">
+            <img src="icons/medium.png" alt="Medium" style="width: 30px;">
+          </a>
+          <p class="mt-2">Medium</p>
+        </div>
+        <!-- YouTube -->
+        <div class="col-2 col-md-1 mb-3">
+          <a href="#" target="_blank" class="btn btn-circle" data-toggle="tooltip" data-placement="top" title="YouTube">
+            <img src="icons/youtube.png" alt="YouTube" style="width: 30px;">
+          </a>
+          <p class="mt-2">YouTube</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Include FontAwesome and Bootstrap JS for Icons and Tooltip -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
+
+
+  <!-- Include FontAwesome and Bootstrap JS for Icons and Tooltip -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
+
+<script>
+  // Smooth scrolling for navigation links
+  document.querySelectorAll('.nav-link').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+</script>
+
+</body>
+
+</html>
